@@ -7,7 +7,7 @@ import { HttpService } from './http.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'public';
+  title = 'Title goes here!';
   
   constructor(private _httpService: HttpService){}
   

@@ -108,7 +108,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AppComponent = /** @class */ (function () {
     function AppComponent(_httpService) {
         this._httpService = _httpService;
-        this.title = 'public';
+        this.title = 'Title goes here!';
     }
     AppComponent.prototype.ngOnInit = function () {
     };
