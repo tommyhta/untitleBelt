@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\na{\n    text-decoration: none;\n    color: navy;\n    font-weight: 600;\n}\n.container{\n    width: 80%;\n    margin: 50px auto;\n}\n.inline{\n    display: inline-block;\n}\n.vert-t{\n    vertical-align: top;\n}\n.m-t{\n    margin-top: 20px;\n}\n.m-b{\n    margin-bottom: 20px;\n}\n.m-l{\n    margin-left: 20px;\n}\n.m-r{\n    margin-right: 20px;\n}\n.noMargin{\n    margin: 0;\n}\n.addPadding{\n    padding: 10px;\n}\n.border{\n    border: 1px solid black;\n    border-radius: 5px;\n}\n.center{\n    text-align: center;\n}"
+module.exports = "/* You can add global styles to this file, and also import other style files */\na{\n    text-decoration: none;\n    color: navy;\n    font-weight: 600;\n}\n.inline{\n    display: inline-block;\n}\n.vert-t{\n    vertical-align: top;\n}\n.m-t{\n    margin-top: 20px;\n}\n.m-b{\n    margin-bottom: 20px;\n}\n.m-l{\n    margin-left: 20px;\n}\n.m-r{\n    margin-right: 20px;\n}\n.noMargin{\n    margin: 0;\n}\n.addPadding{\n    padding: 10px;\n}\n.border{\n    border: 1px solid black;\n    border-radius: 5px;\n}\n.center{\n    text-align: center;\n}"
 
 /***/ }),
 

@@ -1,0 +1,60 @@
+<div class="container">
+    <h2>Submit a movie and your review</h2>
+  <div class="error" >
+    <ul *ngIf="errors.length > 0">
+      <li *ngFor="let i of errors" > {{i}} </li>
+    </ul>
+  </div>
+  <form (submit)="createReview()">
+    <table>
+      <tr>
+        <td class="nameD">Your Name:</td>
+        <td class="inputD"><input 
+          type="text" 
+          name="name" 
+          required
+          minlength="2"
+          [(ngModel)]="newReview.name"
+          #name='ngModel'
+          ></td>
+          <td class="longer" *ngIf="name.errors">
+            <p *ngIf="name.errors['required']">required</p>
+            <p *ngIf="name.errors['minlength']">  {{name.errors['minlength']['actualLength']}}/{{name.errors['minlength']['requiredLength']}} required characters.</p>
+          </td>
+      </tr>
+      <tr>
+        <td>Rating:</td>
+        <td>
+          <select name="rating" required [(ngModel)]="newReview.rating" #rating="ngModel">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </td>
+        <td class="longer" *ngIf="rating.errors"><p *ngIf="rating.errors['required']">required</p></td>
+      </tr>
+      <tr>
+        <td>Review:</td>
+        <td><textarea 
+          name="content"
+          required
+          minlength="5"  
+          [(ngModel)]="newReview.content"
+          #content='ngModel'
+          ></textarea></td>
+          <td class="longer" *ngIf="content.errors">
+              <p *ngIf="content.errors['required']">required</p>
+              <p *ngIf="content.errors['minlength']">  {{content.errors['minlength']['actualLength']}}/{{content.errors['minlength']['requiredLength']}} required characters.</p>
+          </td>
+      </tr>
+      <tr>
+          <td class="rightA" (click)="goHome()" ><button>Cancel</button></td>
+          <td class="rightA" ><button [disabled]="name.errors || content.errors || rating.errors">Submit</button></td>
+        </tr>
+    </table>
+  </form>
+
+
+</div>

@@ -4,10 +4,7 @@ a{
     color: navy;
     font-weight: 600;
 }
-.container{
-    width: 80%;
-    margin: 50px auto;
-}
+
 .inline{
     display: inline-block;
 }
