@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/untitledSchema')
+mongoose.connect('mongodb://172.31.95.196/untitledSchema')
 
 var ReviewSchema = new mongoose.Schema({
     name:{type:String, required: [true, "Name cannot be empty."], minlength: [2, "Name must be at least 2 characters long."]},
